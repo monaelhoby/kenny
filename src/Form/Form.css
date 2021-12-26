@@ -1,0 +1,155 @@
+.input-fields {
+  margin-top: 5vh !important;
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+.name-input,
+.date-of-birth-input,
+.country-input-container {
+  display: flex;
+  margin: 3vh auto;
+}
+
+.country-input-container {
+  width: 102%;
+}
+
+.name-input input,
+.date-of-birth-input input,
+.country-input input,
+.phone-details input,
+.email input,
+.owner-other input,
+.payor-other input {
+  width: 34%;
+  margin-right: 1vw;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.288);
+  outline: unset;
+}
+.country-input {
+  width: 100%;
+  text-align: left;
+  margin-right: 25px;
+}
+.country-input input {
+  width: 93%;
+}
+.country-input label {
+  display: block;
+  margin-bottom: 2vh;
+}
+.input-fields input:focus {
+  transition: all 250ms;
+  box-shadow: 0px 0px 0px 4px rgb(149, 220, 248);
+}
+.check-box-country {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.phone-details input {
+  margin: 0;
+  width: 47% !important;
+  margin-right: 1vw !important;
+}
+.phone-details {
+  margin: 2vh 0 2vh 0;
+  display: flex;
+  width: 100%;
+}
+
+.mailing-address input {
+  width: 96.5%;
+}
+
+.email input {
+  width: 50%;
+  margin-right: 5vw;
+}
+.email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.owner-other,
+.payor-other {
+  margin: 3vh 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.owner-other label,
+.payor-other label {
+  margin-right: 1vw;
+}
+.owner-other input,
+.payor-other input {
+  width: 50%;
+}
+.tier-selection {
+  width: 95%;
+  flex-direction: row !important;
+  justify-content: space-around;
+}
+.number-prov-ex input {
+  width: 89%;
+}
+.submit-form {
+  outline: unset;
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  border: unset;
+  color: white;
+  width: 20%;
+  border-radius: 5px;
+  background-color: rgb(31, 167, 167);
+  margin: 4vh auto;
+  transition: all 0.25s;
+}
+.submit-form:hover {
+  background-color: rgb(22, 150, 150);
+  cursor: pointer;
+}
+.submit-form:active {
+  background-color: rgb(11, 95, 95);
+}
+@media only screen and (max-width: 768px) {
+  .name-input,
+  .date-of-birth-input,
+  .country-input-container,
+  .email,
+  .owner-other,
+  .payor-other,
+  .check-box-country {
+    flex-direction: column;
+  }
+  .owner-other div,
+  .payor-other div {
+    width: 100% !important;
+  }
+  .each-check-box {
+    text-align: left;
+    width: 100%;
+  }
+  .name-input input,
+  .date-of-birth-input input,
+  .country-input-container input,
+  .owner-other input,
+  .payor-other input {
+    width: 100%;
+    margin: 2vh auto;
+  }
+  .mailing-address input {
+    margin: 0 0 1vh 0;
+  }
+  .email input {
+    width: 102%;
+  }
+}

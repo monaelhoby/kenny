@@ -1,0 +1,18 @@
+.notdisableRadio,
+.disableRadio {
+  position: fixed;
+  z-index: 1000;
+  color: white;
+  display: none;
+  left: 50%;
+  top: 50%;
+  font-size: 25px;
+  transform: translate(-50%, -50%);
+  background-color: rgb(102, 174, 223);
+  width: 30vw;
+  height: 40vh;
+  border-radius: 10px;
+}
+.disableRadio {
+  display: block;
+}
